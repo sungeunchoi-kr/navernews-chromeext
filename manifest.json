@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Modify CSS and HTML",
+  "version": "0.1.0",
+  "description": "Test",
+ 
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["lib/jquery-3.5.0.js", "content.js"],
+    "matches": ["https://news.naver.com/main/read.nhn*"],
+    "run_at": "document_end"
+  }]
+}
